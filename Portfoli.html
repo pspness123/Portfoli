@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Tunahan Keser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #0d1b2a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .welcome {
+            font-size: 1.2rem;
+            color: #ffd60a;
+            white-space: nowrap;
+            border-right: 3px solid #ffd60a;
+            overflow: hidden;
+            width: 0;
+            margin-top: 10px;
+            animation: typing 3s steps(30, end) forwards, blink 0.6s step-end infinite alternate;
+        }
+        nav {
+            text-align: center;
+            background-color: #1b263b;
+            padding: 0.7rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd60a;
+            transform: scale(1.1);
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #1e1e1e;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+            animation: fadeInUp 1s ease forwards;
+            opacity: 0;
+        }
+        h2 {
+            color: #ffd60a;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1b263b;
+            color: white;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        .social-links a {
+            color: #ffd60a;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .social-links a:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 270px; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        /* Fade-in on scroll */
+        .visible {
+            opacity: 1 !important;
+            animation: fadeInUp 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tunahan Keser</h1>
+        <p>ICT Student · Angehender Softwareentwickler</p>
+        <div class="welcome">Willkommen zu meinem Portfolio</div>
+    </header>
+
+    <nav>
+        <a href="#about">Über mich</a>
+        <a href="#skills">Fähigkeiten</a>
+        <a href="#projects">Projekte</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <section id="about">
+        <h2>Über mich</h2>
+        <p>Ich befinde mich in der EFZ-Ausbildung nach dem Modell «schulisch organisierte Grundbildung» (SOG) bei der IBZ in Basel. 
+           Im August 2025 habe ich bereits zwei Jahre meiner Ausbildung absolviert und alle ICT-Module abgeschlossen. 
+           Für den praktischen Teil meiner Ausbildung suche ich nun eine zweijährige Vollzeit-Praktikumsstelle.</p>
+        <p>Schon vor meiner Ausbildung habe ich das erste Mal mit Scratch programmiert und mit HTML eine Zeitungsseite erstellt. 
+           Während meiner Ausbildung habe ich u.a. ein Schneekugel-Projekt in M5Stack mit C, ein 2D-Spiel in Unity mit C#, 
+           sowie einen Discord-Bot programmiert.</p>
+        <p>Ich arbeite gerne im Team, bin zuverlässig, neugierig und kann mich lange konzentriert auf eine Aufgabe fokussieren.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Fähigkeiten</h2>
+        <ul>
+            <li>Programmierung in C, C#, HTML, CSS</li>
+            <li>Unity Game Development</li>
+            <li>Discord-Bot Entwicklung</li>
+            <li>Projektarbeit & Dokumentation</li>
+            <li>Teamarbeit & Präsentationen</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projekte</h2>
+        <ul>
+            <li><strong>M5Stack Schneekugel:</strong> Animation mit C programmiert</li>
+            <li><strong>2D-Spiel in Unity:</strong> Eigenständig entwickelt mit C#</li>
+            <li><strong>Discord-Bot:</strong> Automatisierte Funktionen und Commands</li>
+            <li><strong>Währungsrechner App:</strong> Mobile App Entwicklung</li>
+            <li><strong>HTML Webseiten:</strong> Verschiedene Webprojekte</li>
+            <li><strong>Saveup App:</strong> Spar-Management</li>
+            <li><strong>Sprachlern App:</strong> Vokabeltrainer</li>
+            <li><strong>Website für Skireservierungen:</strong> Buchungssystem</li>
+            <li><strong>Website für Besprechungsraum reservieren:</strong> Raummanagement</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p><strong>Adresse:</strong> Feldstrasse 35, 4123 Allschwil</p>
+        <p><strong>Email:</strong> tunahan.keser@example.com</p>
+        <p><strong>Telefon:</strong> +41 79 123 45 67</p>
+        <div class="social-links">
+            <strong>Social Media:</strong>
+            <a href="https://github.com/pspness123" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/tunahan-keser-497a9a325/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Tunahan Keser – Portfolio
+    </footer>
+
+    <script>
+        // Animate sections when scrolling into view
+        const sections = document.querySelectorAll("section");
+        const options = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

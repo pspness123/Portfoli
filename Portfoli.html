@@ -4,109 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Tunahan Keser</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        header {
-            background-color: #0d1b2a;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .welcome {
-            font-size: 1.2rem;
-            color: #ffd60a;
-            white-space: nowrap;
-            border-right: 3px solid #ffd60a;
-            overflow: hidden;
-            width: 0;
-            margin-top: 10px;
-            animation: typing 3s steps(30, end) forwards, blink 0.6s step-end infinite alternate;
-        }
-        nav {
-            text-align: center;
-            background-color: #1b263b;
-            padding: 0.7rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        nav a:hover {
-            color: #ffd60a;
-            transform: scale(1.1);
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 2rem;
-            background-color: #1e1e1e;
-            margin-top: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.5);
-            animation: fadeInUp 1s ease forwards;
-            opacity: 0;
-        }
-        h2 {
-            color: #ffd60a;
-        }
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #1b263b;
-            color: white;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-        }
-        .social-links a {
-            color: #ffd60a;
-            margin-right: 10px;
-            text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        .social-links a:hover {
-            color: white;
-            transform: scale(1.1);
-        }
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 270px; }
-        }
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-        /* Fade-in on scroll */
-        .visible {
-            opacity: 1 !important;
-            animation: fadeInUp 1s ease forwards;
-        }
-    </style>
+    <link rel="stylesheet" href="portfoli.css">
 </head>
 <body>
     <header>
@@ -144,20 +42,71 @@
         </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projekte</h2>
-        <ul>
-            <li><strong>M5Stack Schneekugel:</strong> Animation mit C programmiert</li>
-            <li><strong>2D-Spiel in Unity:</strong> Eigenständig entwickelt mit C#</li>
-            <li><strong>Discord-Bot:</strong> Automatisierte Funktionen und Commands</li>
-            <li><strong>Währungsrechner App:</strong> Mobile App Entwicklung</li>
-            <li><strong>HTML Webseiten:</strong> Verschiedene Webprojekte</li>
-            <li><strong>Saveup App:</strong> Spar-Management</li>
-            <li><strong>Sprachlern App:</strong> Vokabeltrainer</li>
-            <li><strong>Website für Skireservierungen:</strong> Buchungssystem</li>
-            <li><strong>Website für Besprechungsraum reservieren:</strong> Raummanagement</li>
-        </ul>
-    </section>
+   <section id="projects">
+  <h2>Projekte</h2>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/m5stack.jpg" style="width:100%" alt="M5Stack Schneekugel">
+      <div class="caption">M5Stack Schneekugel: Animation mit C programmiert</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/unity-game.jpg" style="width:100%" alt="Unity 2D-Spiel">
+      <div class="caption">2D-Spiel in Unity: Eigenständig entwickelt mit C#</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/discord-bot.jpg" style="width:100%" alt="Discord Bot">
+      <div class="caption">Discord-Bot: Automatisierte Funktionen und Commands</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/currency-app.jpg" style="width:100%" alt="Währungsrechner App">
+      <div class="caption">Währungsrechner App: Mobile App Entwicklung</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/websites.jpg" style="width:100%" alt="HTML Webseiten">
+      <div class="caption">HTML Webseiten: Verschiedene Webprojekte</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/saveup-app.jpg" style="width:100%" alt="Saveup App">
+      <div class="caption">Saveup App: Spar-Management</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/language-app.jpg" style="width:100%" alt="Sprachlern App">
+      <div class="caption">Sprachlern App: Vokabeltrainer</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/ski-reservation.jpg" style="width:100%" alt="Skireservierungen">
+      <div class="caption">Website für Skireservierungen: Buchungssystem</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/meetingroom.jpg" style="width:100%" alt="Besprechungsraum">
+      <div class="caption">Website für Besprechungsraum reservieren: Raummanagement</div>
+    </div>
+
+    <!-- Arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</section>
+
 
     <section id="contact">
         <h2>Kontakt</h2>
@@ -175,21 +124,6 @@
         &copy; 2025 Tunahan Keser – Portfolio
     </footer>
 
-    <script>
-        // Animate sections when scrolling into view
-        const sections = document.querySelectorAll("section");
-        const options = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, options);
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+    <script src="Portfoli.js" defer></script>
 </body>
 </html>

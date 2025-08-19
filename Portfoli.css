@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #0d1b2a;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.welcome {
+    font-size: 1.2rem;
+    color: #ffd60a;
+    white-space: nowrap;
+    border-right: 3px solid #ffd60a;
+    overflow: hidden;
+    width: 0;
+    margin-top: 10px;
+    animation: typing 3s steps(30, end) forwards, blink 0.6s step-end infinite alternate;
+}
+
+nav {
+    text-align: center;
+    background-color: #1b263b;
+    padding: 0.7rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd60a;
+    transform: scale(1.1);
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+h2 {
+    color: #ffd60a;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1b263b;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: #ffd60a;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    border-radius: 8px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.numbertext {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+    background: rgba(0,0,0,0.6);
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.caption {
+    color: #ffd60a;
+    font-size: 1rem;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background 0.3s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 270px; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.visible {
+    opacity: 1 !important;
+    animation: fadeInUp 1s ease forwards;
+}
